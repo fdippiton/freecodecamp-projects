@@ -1,0 +1,196 @@
+#logo {
+    width: max(100px, 18vw);
+    background-color: #0a0a23;
+    aspect-ratio: 35/4;
+    padding: 0.4rem;
+}
+
+* {
+    margin: 0;
+    font-family: 'Verdana', sans-serif;
+}
+
+header {
+    width: 100%;
+    height: 50px;
+    background-color: #1b1b32;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: fixed;
+    top: 0;
+}
+
+h1 {
+    color: #f1be32;
+    font-size: min(5vw, 1.2em);
+    text-align: center;
+}
+
+nav > ul {
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    align-items: center;
+    padding-inline-start: 0;
+    margin-block: 0;
+    height: 100%;
+}
+
+h1, h2 {
+    font-family: 'Verdana', sans-serif;
+}
+
+h2 {
+    border-bottom: 4px solid #dfdfe2;
+    margin-top: 0;
+    padding-top: 60px;
+}
+
+/* ^ The .sr-only text is still visible. There is a common pattern to visually hide text for only screen readers to read. */
+.sr-only {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    padding: 0;
+    margin: -1px;
+    overflow: hidden;
+    clip: rect(0, 0, 0, 0);
+    white-space: nowrap;
+    border: 0;
+}
+
+/* ^ To prevent unnecessary repetition, target the before pseudo-element of the p element, and give it a content property of "Question #". */
+p::before {
+    content: "Question #";
+}
+
+nav > ul > li {
+    color: #dfdfe2;
+    margin: 0 0.2rem;
+    padding: 0.2rem;
+    display: block;
+}
+
+li > a {
+    color: white;
+    text-decoration: none;
+}
+
+nav > ul > li:hover {
+    background-color: #dfdfe2;
+    color: #1b1b32;
+    cursor: pointer;
+}
+
+main {
+    padding-top: 35px;
+}
+
+section {
+    width: 80%;
+    margin: 0 auto 10px auto;
+    max-width: 600px;
+}
+
+.info {
+    padding: 10px 0 0 10px;
+}
+
+.formrow {
+    margin-top: 10px;
+    padding: 0 10px;
+}
+
+input {
+    font-size: 15px;
+}
+
+.info input {
+    width: 50%;
+    text-align: left;
+}
+
+.info label {
+    width: 10%;
+    min-width: 55px;
+}
+
+.info > input, .info > label {
+    display: inline-block;
+    text-align: right;
+}
+
+.question-block {
+    text-align: left;
+    display: block;
+    width: 100%;
+    margin-top: 20px;
+    padding-top: 5px;
+}
+
+p {
+    margin-top: 5px;
+    padding-left: 15px;
+    font-size: 20px;
+}
+
+.question {
+    border: none;
+    padding: 0;
+}
+
+.answers-list {
+    list-style: none;
+    padding: 0;
+}
+
+button {
+    display: block;
+    margin: 40px auto;
+    width: 40%;
+    padding: 15px;
+    font-size: 23px;
+    background: #d0d0d5;
+    border: 3px solid #3b3b4f;
+}
+
+footer {
+    background-color: #2a2a40;
+    display: flex;
+    justify-content: center;
+}
+
+footer, footer a {
+    color: white;
+}
+
+address {
+    text-align: center;
+    padding: 10px;
+}
+
+
+/* 
+Certain types of motion-based animations can cause discomfort for some users. In particular, people with vestibular disorders have sensitivity to certain motion triggers.
+
+The @media at-rule has a media feature called prefers-reduced-motion to set CSS based on the user's preferences. It can take one of the following values:
+
+- reduce
+- no-preference
+
+@media (feature: value) {
+    selector {
+    styles
+    }
+}
+*/
+
+@media (prefers-reduced-motion: no-preference){
+    /* is used to detect if the user has requested that the system minimize the amount of non-essential motion it uses */
+    /* no-preference - Indicates that the user has made no preference known to the system */
+    * {
+        scroll-behavior: smooth;
+    }
+    
+}

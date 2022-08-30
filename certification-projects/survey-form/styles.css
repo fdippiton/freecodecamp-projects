@@ -1,0 +1,114 @@
+body {
+    background-image: url("https://live.staticflickr.com/670/22905214889_6927b4caaa_b.jpg");
+    margin: 0;
+    font-family: Tahoma;
+    background-size: cover;  /* THE IMAGE TAKES THE WHOLE SIZE OD THE SCREEM */
+}
+
+main {
+    background: rgba(107, 72, 255, 0.5);
+    /* height: 100vh; */
+    /* width: 100vw; */
+}
+
+#title {
+    font-family: Tahoma;
+    text-align: center;
+    font-weight: normal;
+    padding-top: 2em;
+    color: white;
+}
+
+h4 {
+    font-weight: normal;
+    margin: 0;
+}
+
+#description {
+    text-align: center;
+    color: white;
+    font-style: italic;
+    font-size: 1.2em;
+}
+
+#survey-form {
+    width: 70%;
+    margin: 0 auto;
+    background-color: rgba(41,52,98, 0.9);
+    color: white;
+    padding-bottom: 12px;
+    border-radius: 3px;
+}
+
+fieldset {
+    padding: 1.5em;
+    border: none;
+}
+
+input {
+    display: block;
+    padding: 10px 8px; 
+    font-family: Tahoma;
+    border-radius: 3px;
+    border: none;
+    font-size: 0.9em;
+}
+
+input[type="radio"] {
+    display: inline-block;
+    margin-left: 0;
+}
+
+input[class="lg_width"] {
+    width: 100%;
+    margin: 10px 0 0 0;
+}
+
+select, textarea {
+    width: 100%;
+}
+
+select {
+    padding: 10px 8px;
+    font-family: Tahoma;
+    margin-top: -20px;
+    font-size: 0.9em;
+}
+
+textarea {
+    padding: 10px 12px 60px 12px;
+    font-family: Tahoma;
+}
+
+label{
+    display: block;
+    margin: 20px 0 5px 0;
+}
+
+#field-radio {
+    display: block;
+}
+
+input[type="checkbox"]{
+    display: inline-block;
+    border: none;
+    margin-left: 0;
+}
+
+#field-checkbox {
+    margin-top: -25px;
+}
+
+#field-textarea {
+    margin-top: -30px;
+}
+
+#submit {
+    width:100%;
+    margin: 0 auto;
+    text-align: center;
+    background-color: #5BE7C4;
+    border: none;
+    padding: 12px;
+    margin-top: 30px;
+}

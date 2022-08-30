@@ -1,0 +1,80 @@
+/*^ TO NORMALIZE THE BOX MODEL */
+* {
+    box-sizing: border-box;
+}
+
+#gallery img {
+    width: 25%;
+    height: 300px;
+}
+
+body {
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #EBE7E7;
+}
+
+.header {
+    text-align: center;
+    padding: 32px;
+    background: #E0DDDD;
+}
+
+/* FLEXBOX IS A ONE-DIMENSIONAL CSS LAYOUT APPROACH THAT FOCUSES ON THE FLOW OF
+CONTENT. IT OFFERS THE ABILITY TO CONTROL THE WAY ITEMS ARE APACED AND
+ALIGNED WITHIN A CONTAINER */
+
+#gallery {
+    display: flex; /* INLINE BY DEFAULT */
+    /* FLEXBOX HAVE TWO AXES, THE MAIN AXIS AND THE CROSS
+    AXIS. THE MAIN AXIS IS DETERMINED BY THE [flex-direction] PROPERTY.
+    IF [flex-direction] IS SET TO row OR row-reverse, THE MAIN 
+    AXIS IS HORIZONTAL. IF [flex-direction] IS SET TO column OR column-reverse, 
+    THE MAIN AXIS IS VERTICAL. */
+    flex-direction: row;
+
+    /* THE [flex-wrap] PROPERTY DETERMINES HOW YOUR ITEMS SHOULD
+    BEHAVE WHEN THE FLEX CONTAINER IS TOO SMALL. SETTING THIS PROPERTY
+    TO [wrap] WILL ALLOW YOUR ITEMS TO WRAP TO THE NEXT
+    ROW/COLUMN (DEPENDING TO YOUR MAIN AXIS), WHERE [nowrap] WILL PREVENT
+    YOUR ITEMS FROM WRAPPING. WHEN THIS IS SET TO [nowrap], ITEMS MAY EITHER 
+    SHRINK TO FIT OR OVERFLOW */
+    flex-wrap: wrap;
+
+    /* THE [justify-content] PROPERTY DETERMINES HOW THE
+    ITEMS INSIDE A FLEX-CONTAINER ARE POSITIONED ALONG THE MAIN
+    AXIS, AFFECTING THEIR POSITION AND THE SPACE AROUND THEM. */
+    justify-content: center;
+
+    /* THE [align-item] PROPERTY POSITIONS THE FLEX
+    CONTENT ALOGN THE CROSS AXIS. IN THIS CASE, WITH YOUR
+    [flex-direction] SET TO row, YOUR CROSS AXIS WOULD BE VERTICAL */
+    align-items: center;
+    padding: 0 4px;
+
+    /* SOME OF THE IMAGES HAVE BECOME DISTORTED. THIS IS BECAUSE THE IMAGES 
+    HAVE DIFFERENT ASPECT RATIOS. RATHER THAN SETTING EACH ASPECT
+    RATIO INDIVIDUALLY, YOU CAN USE THE [object-fit] PROPERTY TO DETERMINE HOW
+    IMAGES SHOULD BEHAVE. THIS WILL TELL THE IMAGE TO FILL THE IMG CONTAINER WHILE
+    MAINTAINING ASPECT RATIO, RESULTING IN CROPPING TO FIT */
+    object-fit: cover;
+
+    margin-top: 8px;
+    padding: 0 4px;
+    border-radius: 10px;
+}
+
+/* FOR SCREENS SMALLER THAN 800PX IN WIDTH */
+@media (max-width: 800px){
+    #gallery img {
+        width: 50%;
+    }
+}
+
+@media (max-width: 600px){
+    #gallery img {
+        width: 100%;
+    }
+}
+
+

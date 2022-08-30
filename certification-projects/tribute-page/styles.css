@@ -1,0 +1,74 @@
+body {
+    background-color: white;
+    font-family: -apple-system, sans-serif;
+}
+
+main {
+    background-color: #f2f4f6;
+    border-radius: 1%;
+    margin: 20px 5px;
+    overflow: hidden;
+    padding: 10px 10px;
+    text-align: center;
+}
+
+#img-div {
+    display: flex;
+    justify-content: center;
+    background-color: white;
+    width: 100%;
+    height: auto;
+    align-items: center;
+}
+
+#image {
+    width: 99%;
+    height: auto;
+    max-width: 100%; 
+    object-fit: cover;
+    display: block;
+}
+
+figcaption #img-caption {
+    height: 10%;
+    font-size: 0.75em;
+}
+
+figcaption {
+    overflow: hidden;
+    margin-top: 7px;
+}
+
+figure {
+    margin: 0;
+    width: 96%;
+    height: 95%;
+    padding: 10px;
+}
+
+#tribute-info {
+    padding: 60px 100px;
+    
+}
+
+#tribute-info h1 {
+    font-size: 1.1rem;
+}
+
+#footer h1 {
+    font-size: 1.1rem;
+}
+
+.bold {
+    font-weight: 800;
+}
+
+li {
+    text-align: left;
+    padding-top: 15px; 
+}
+
+a {
+    color: #2470a0;
+    cursor: pointer;
+}

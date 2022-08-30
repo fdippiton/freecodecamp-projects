@@ -1,0 +1,178 @@
+html {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: sans-serif;
+    color: #0a0a23;
+}
+
+span[class~="sr-only"]{
+    border: 0 !important;
+    /* The CSS clip property is used to define the visible portions of an element. */
+    clip: rect(1px, 1px, 1px, 1px) !important;
+    /* The clip-path property determines the shape the clip property should take */
+    /* Set both the clip-path and -webkit-clip-path properties to the value of inset(50%), forming the clip-path into a rectangle within the element. */
+    clip-path: inset(50%) !important;
+    -webkit-clip-path: inset(50%) !important;
+    width: 1px !important;
+    height: 1px !important;
+    overflow: hidden !important;
+    white-space: nowrap !important;
+    position: absolute !important;
+    padding: 0 !important;
+    margin: -1px !important;
+}
+
+h1 {
+    max-width: 37.25rem;
+    margin: 0 auto;
+    padding: 1.5rem 1.25rem;
+}
+
+h1 .flex {
+    display: flex;
+    flex-direction: column-reverse; /* this will display the nested elements from bottom to top. */
+    gap: 1rem; /* create some space between the elements. Space between the words line */
+}
+
+h1 .flex span:first-of-type {
+    /* The :first-of-type pseudo-selector is used to target the first element that matches the selector. */
+    font-size: 0.7em;
+}
+
+h1 .flex span:last-of-type {
+    /* The :last-of-type pseudo-selector does the exact opposite - it targets the last element that matches the selector. */
+    font-size: 1.2em;
+}
+
+section {
+    max-width: 40rem;
+    margin: 0 auto;
+    border: 2px solid #d0d0d5;
+}
+
+#years {
+    display: flex;
+    justify-content: flex-end;
+    top: 0;
+    position: sticky;
+    color: #fff;
+    background: #0a0a23;
+    margin: 0 -2px;
+    padding: 0.5rem calc(1.25rem + 2px) 0.5rem 0;
+    /* 
+    The calc() function is a CSS function that allows you to calculate a value based on other values. For example, you can use it to calculate the width of the viewport minus the margin of an element:
+
+    .example {
+        margin: 10px;
+        width: calc(100% - 20px);
+    }
+    */
+    z-index: 999;
+}
+
+/* The span[class] syntax will target any span element that has a class attribute set, regardless of the attribute's value. */
+#years span[class] {
+    font-weight: bold;
+    width: 4.5rem;
+    text-align: right;
+}
+
+.table-wrap {
+    padding: 0 0.75rem 1.5rem 0.75rem;
+}
+
+/* span:not(.sr-only){
+    The :not() pseudo-selector is used to target all elements that do not match the selector - in this case, any of your span elements that do not have the sr-only class. This ensures that your earlier rules for the span[class~="sr-only"] selector are not overwritten
+    font-weight: normal;
+} */
+
+/* span{
+    The :not() pseudo-selector is used to target all elements that do not match the selector - in this case, any of your span elements that do not have the sr-only class. This ensures that your earlier rules for the span[class~="sr-only"] selector are not overwritten
+    font-weight: normal;
+} */
+
+table {
+    border-collapse: collapse; /* will allow cell borders to collapse into a single border, instead of a border around each cell.  */
+    border: 0;
+    width: 100%;
+    position: relative;
+    margin-top: 3rem;
+}
+
+table caption {
+    color: #356eaf;
+    font-size: 1.3em;
+    font-weight: normal;
+    position: absolute;
+    top: -2.25rem;
+    left: 0.5rem;
+}
+
+tbody td {
+    width: 100vw;
+    max-width: 4rem;
+    min-width: 4rem;
+}
+
+tbody th {
+    width: calc(100% - 12rem);
+}
+
+tr[class="total"]{
+    border-bottom: 4px double #0a0a23;
+    font-weight: bold;
+}
+/* The [attribute="value"] selector targets any element that has an attribute with a specific value. */
+
+tr[class="total"] th {
+    text-align: left;
+    padding: 0.5rem 0 0.25rem 0.5rem;
+}
+
+tr.total td{
+    text-align: right;
+    padding: 0 0.25rem;
+}
+
+tr.total td:nth-of-type(3){
+    /* The :nth-of-type() pseudo-selector is used to target specific elements based on their order among siblings of the same type.  */
+    padding-right: 0.5rem;
+}
+
+tr.total:hover {
+    background: #99c9ff;
+}
+
+td[class="current"]{
+    font-style: italic;
+}
+
+tr[class="data"]{
+    background-image: linear-gradient(to bottom, #dfdfe2 1.845rem, white 1.845rem);
+}
+
+tr.data th {
+    text-align: left;
+    padding-left: 0.5rem;
+    padding-top: 0.3rem;
+}
+
+tr.data th .description {
+    display: block;
+    font-style: italic;
+    font-weight: normal;
+    padding: 1rem 0 0.75rem;
+    margin-right: -13.5rem;
+}
+
+tr.data td {
+    vertical-align: top;
+    text-align: right;
+    padding: 0.3rem 0.25rem 0;
+}
+
+tr.data td:last-of-type {
+    padding-right: 0.5rem;
+}

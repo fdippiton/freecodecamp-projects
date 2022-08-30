@@ -1,0 +1,238 @@
+/*^ TO SET A TEXT TO THE RIGHT 
+[text-align: right;]
+*/
+
+/*^ TO SET A TEXT TO THE CENTER
+[text-align: center;]
+*/
+
+h1 {
+    text-align: center;
+    /* background-color: rgb(0, 255, 255); */
+}
+
+.marker {
+    /* background-color: red; */
+    /* margin: auto; */
+
+    /*^ TO GET A COLOR ON A ELEMENT, FIRSTLY SET A WIDTH AND HEIGHT
+    */
+    width: 200px;
+    height: 25px;
+
+    /*^ TO CENTER A ELEMENT USING MARGIN
+    [margin: auto]
+    MARGIN TOP, BOTTOM, RIGHT AND LEFT GET THE SAME VALUE
+    */
+
+    /*^ TO SET DIFFERENT VALUES HORIZONTAL AND VERTICAL
+     */
+    margin: 10px auto;
+
+}
+
+/* -------------------------------------------------------------------------- */
+/*                                  /RED MARK                                 */
+/* -------------------------------------------------------------------------- */
+
+.red {
+    /* background-color: red; */
+    /* background-color: rgb(255, 0,0); */
+
+    /*^ TO MAKE SECONDARY COLORS, MIX PRIMARY COLORS */
+    /* background-color: rgb(255, 255, 0); */
+
+    /*^ TO MAKE TERTIARY COLORS, MIX PRIMARY COLORS AND SECONDARY COLORS */
+    /* background-color: rgb(255, 127, 0); */
+    /* background-color: rgb(127, 255, 0); */
+    /* background-color: rgb(255, 0, 0);  */
+    /* background:rgb(255, 0, 0);  */
+    /* background: linear-gradient(90deg, rgb(255, 0, 0), rgb(0, 255, 0), rgb(0, 0, 255)); */
+    
+    /*^ TO TRANSITION FROM ONE COLOR TO OTHER AT CERTAIN POINT, USE PERCENTAGE
+    EX: TO START THE GRADIENT AT 75% OF THE WHOLE ELEMENT. THE FIRST COLOR WILL TAKE A 75% OF THE SPACE.
+    */
+    /* background: linear-gradient(90deg, rgb(255, 0, 0) 75%, rgb(0, 255, 0), rgb(0, 0, 255));  */
+    /* background: linear-gradient(180deg, rgb(122, 74, 14) 0%, rgb(245, 62, 113) 50%, rgb(162, 27, 27) 100%);  */
+    background: linear-gradient(rgb(122, 74, 14), rgb(245, 62, 113), rgb(162, 27, 27)); 
+
+    box-shadow: 5px 5px red;
+    /* box-shadow: -5px -5px red; */
+    box-shadow: 0 0 20px 0 rgba(83, 14, 14, 0.8);
+}
+
+/* -------------------------------------------------------------------------- */
+/*                                 /GREEN MARK                                */
+/* -------------------------------------------------------------------------- */
+
+.green {
+    /* background-color: green; */
+    /* background-color: rgb(0, 255, 0); */
+    /* background-color: rgb(0, 127, 0); */
+    /* background-color: rgb(0, 255, 255); */
+    /* background-color: rgb(0, 127, 255); */
+
+    /*^ SET HEXADECIMAL COLORS */
+    /* background-color: #00FF00; */
+    /* background: linear-gradient(180deg, #55680D, #71f53e, #116c31); */
+    background: linear-gradient(#55680D, #71f53e, #116c31);
+    /* box-shadow: 5px 5px 5px green; */
+    box-shadow: 0 0 20px 0 #3b7e20cc;
+
+}
+
+/* -------------------------------------------------------------------------- */
+/*                                  /BLUE MARK                                */
+/* -------------------------------------------------------------------------- */
+
+.blue {
+    /* background-color: blue; */
+    /* background-color: rgb(0, 0, 255); */
+    /* background-color: rgb(255, 0, 255); */
+    /* background-color: rgb(255, 0, 127); */
+    background-color: hsl(240, 100%, 50%);
+    background: linear-gradient(hsl(186, 76%, 16%), hsl(223, 90%, 60%), hsl(240, 56%, 42%));
+    /* box-shadow: 0 0 20px 0 blue; */
+    box-shadow: 0 0 20px 0 hsla(223, 59%, 31%, 0.8);
+}
+
+.container {
+    /* background-color: rgb(0, 0, 0); */
+    background-color: rgb(255,255, 255); /* To make white*/
+    padding: 10px 0;
+}
+
+
+/* 
+Two colors that are opposite from each other on the color wheel
+are called [complementary colors]. 
+
+If two complementary colors are combined, they produce gray. But when 
+they are placed side-by-side, these colors produce strong visual 
+constrast and appear brighter.
+
+It's better practice to choose one color as the dominant color, and use 
+it's complementary color as an accent to bring attention to certain 
+content on the page. 
+*/
+
+
+
+/* 
+Decimal goes from 0-9. Hexadecimal, or base 16 values 
+go from 0-9, and A-F
+
+0, 1, 2, 3, 4, 5, 6, 7, 8, 9, A, B, C, D, E, F
+
+With hex colors, 00 is 0% of that color, and FF is 100%. So 
+#00FF00 translates to 0% red, 100% green, and 0% blue, and is 
+the same as rgbb(0, 255, 0)
+*/
+
+
+/* 
+The HSL color model, or hue, saturation and lightness is 
+another way to represent colors.
+
+The CSS [hsl] function accepts 3 values: a number from 0 to 360 for
+hue, a percentage from 0 to 100 for saturation, and a percentage from
+0 to 100 for lightness.
+
+If you imagine a color wheel, the hue red is at 0 degrees,
+green is at 120 degrees, and blue is at 240 degrees.
+
+Saturation is the intensity of a color from 0%, or gray, to 100%
+for pure color.
+
+Lightness is how bright a color appears, from 0% or complete
+black, to 100%, complete white, with 50% being neutral.
+*/
+
+
+/* 
+A gradient helps us to make color transitions. The CSS [linear-gradient] 
+function lets you control the direction of the transition along 
+a line, and which colors are used.
+
+A gradient is when one color transitions into another.
+
+The Linear gradient function actually creates an image element, and is 
+usually paired with the background property which can accept an image as a 
+value 
+
+The linear-gradiente syntax:
+linear-gradient(gradientDirection, color1, color2);
+
+If no [gradientDirection] argument is provided to the linear-gradient  function, 
+it arranges colors from top to bottom, or along a 180 degree line, by default
+*/
+
+
+.sleeve {
+    width: 110px;
+    height: 25px;
+    /* background-color: white; */
+
+    /*^ TO CONTROL OPACITY 
+    0% Fully transparent
+    1% Fully opaque
+    */
+    /* opacity: 0.5; */
+
+    /*^ IT'S POSSIBLE TO SET OPACITY WITH ALPHA CHANNELS TOO 
+    USE:
+    rgba(redValue, greenValue, blueValue, alphaValue)
+    */
+    background-color: rgba(255, 255, 255, 0.5);
+}
+
+.cap {
+    width: 60px;
+    height: 25px;
+}
+
+.cap, .sleeve {
+    /* DIV'S DISPLAY IS BLOCK, SO IT HAS TO BE CHANGED */
+    display: inline-block;
+
+    /*^ TO SET BORDER
+    [border-color]
+    */
+
+    border-left-width: 10px;
+
+    /*^ BORDER STYLE
+    [border-left-style: solid, dotted, dashed]
+    */
+    border-left-style: solid;
+
+    /*^ BORDER COLOR */
+    border-left-color: black;
+
+    /*^ BORDER'S WIDTH, STYLE AND COLOR AT THE SAME TIME
+    [border-left: width style color]
+    */
+    /* border-left: 10px solid black; */
+
+    /*^ TO DOUBLE LINE */
+    /* border-left: 10px double black; */
+
+    border-left: 10px double rgba(0, 0, 0, 0.75);
+}
+
+/*^ TO ADD SHADOWS TO THE ELEMENTS TO THE RIGHT SIDE
+[box-shadow: offsetX offsetY color]
+
+TO ADD SHADOWS TO THE ELEMENTS TO THE OPPOSITE SIDE
+[box-shadow: -offsetX -offsetY color]
+*/
+
+/*^ BLURRADIUS
+EDGES OF THE SHADOWS ARE SHARP
+[box-shadow: -offsetX -offsetY blurRadius color]
+*/
+
+/* 
+SPREADRADIUS TO EXPAND THE SHADOW FURTHER
+[box-shadow: -offsetX -offsetY blurRadius spreadRadius color]
+*/

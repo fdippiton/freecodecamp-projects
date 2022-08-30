@@ -1,0 +1,123 @@
+h1,
+h2,
+p {
+  text-align: center;
+}
+
+body {
+  /* background-color: burlywood; */
+
+  /*^ For background image */
+  background-image: url(https://cdn.freecodecamp.org/curriculum/css-cafe/beans.jpg);
+  padding: 20px;
+
+  /*^ Fonts */
+  font-family: sans-serif;
+}
+
+.menu {
+  width: 80%;
+  background-color: burlywood;
+  
+  /*^ Center element */
+  margin-left: auto;
+  margin-right: auto;
+
+  /*^ Give some space on the sides
+  padding-left: 20px;
+  padding-right: 20px;
+  padding-top: 20px;
+  padding-bottom: 20px; 
+  */
+
+  /*^ Give some space for all */
+  padding: 20px;
+
+  /*^ To prevent that in a wide screen the coffee and desserts appears to far apart from the prices */
+  max-width: 500px;
+}
+
+/*^ To select an element using a class .name-class */
+.flavor, .dessert{
+  text-align: left;
+  width: 75%;
+}
+
+.price {
+  text-align: right;
+  width: 25%;
+}
+
+.item p {
+  display: inline-block; /*^ To inline elements */
+  margin-top: 5px;
+  margin-bottom: 5px;
+  font-size: 18px;
+}
+
+/*^ To change the font of titles */
+h1, h2 {
+  font-family: Impact, serif;
+}
+
+.established {
+  font-style: italic;
+}
+
+h1 {
+  font-size: 40px;
+  margin: 0;
+  margin-bottom: 15px;
+}
+
+h2 {
+  font-size: 30px;
+}
+
+hr {
+  height: 2px;
+  background-color: brown;
+  border-color: brown;
+}
+
+.bottom-line {
+  margin-top: 25px;
+}
+
+/** --------------------------------- FOOTER --------------------------------- */
+
+footer {
+  font-size: 14px;
+}
+
+a {
+  color: black;
+}
+
+/*^ When a link is visited */
+a:visited {
+  /* color: grey; */
+  color: black;
+}
+
+/*^ When the mouse is over the element */
+a:hover {
+  color: brown;
+}
+
+/*^ When a link is actually being clicked */
+a:active {
+  color: white;
+  color: brown;
+}
+
+.address {
+  margin-bottom: 5px;
+}
+
+img {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: -25px;
+}
