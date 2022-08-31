@@ -52,7 +52,7 @@ section {
     border: 2px solid #d0d0d5;
 }
 
-#years {
+.years {
     display: flex;
     justify-content: flex-end;
     top: 0;
@@ -73,7 +73,7 @@ section {
 }
 
 /* The span[class] syntax will target any span element that has a class attribute set, regardless of the attribute's value. */
-#years span[class] {
+.years span[class] {
     font-weight: bold;
     width: 4.5rem;
     text-align: right;

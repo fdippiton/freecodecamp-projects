@@ -1,0 +1,97 @@
+html {
+    box-sizing: border-content;
+}
+
+* {
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    display: flex;
+    font-family: -apple-system, sans-serif;
+    margin: 0;
+}
+
+.menu {
+    width: 35%;
+    border-right: 2px solid black;
+    overflow: hidden;
+    height: 330%;
+}
+
+header.border.title {
+    padding: 20px 25px;
+}
+
+.title{
+    font-size: 1.4rem;
+    font-weight: 600;
+    padding: 25px 25px 15px 0;
+}
+
+.menu header .title{
+    padding: 15px 25px;
+}
+
+#main-doc {
+    width: 65%;
+    padding: 12px 45px;
+}
+
+main {
+    padding-bottom: 12px;
+}
+
+a {
+    list-style: none;
+    text-decoration: none;
+    color: black;
+    text-indent: 25px;
+}
+  
+  ul {
+    padding-left: 0;
+}
+
+.menu a li {
+    padding: 25px 0;
+}
+
+.border{
+    border-bottom: 1px solid black;
+}
+
+code {
+    padding: 5px;
+    background-color: #f2f4f6;
+    line-height: 40px;
+    margin-left: 20px;
+}
+
+
+#intro{
+    cursor:pointer;
+}
+
+#introduction ul, #colors ul, #text-styles ul {
+    padding-left: 25px;
+}
+
+#introduction ul li, #colors ul li, #text-styles ul li{
+    margin: 10px 0;
+}
+
+p {
+    padding: 15px 0;
+}
+
+#references a {
+    color: blue;
+}
+
+@media (max-width: 750px){
+    .menu {
+        display:none;
+    }
+}

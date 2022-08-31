@@ -23,9 +23,9 @@ This repo is a collection of all the projects that I've been completing through 
 
     - Learn More About CSS Pseudo Selectors By Building A Balance Sheet ✔️
     - Learn Intermediate CSS by Building a Picasso Painting ✔️
-    - Learn Responsive Web Design by Building a Piano
+    - Learn Responsive Web Design by Building a Piano ✔️
 
-        #### Certification Project : **Technical Documentation Page**
+        #### Certification Project : **Technical Documentation Page** ✔️
     ----------------------------------------------------------
     
     - Learn CSS Variables by Building a City Skyline 
