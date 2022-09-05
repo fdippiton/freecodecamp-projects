@@ -216,6 +216,83 @@ hr {
 
 
 
+/* -------------------------------------------------------------------------- */
+/*                                  CSS GRID                                  */
+/* -------------------------------------------------------------------------- */
 
+
+/* 
+
+^ grid-template-columns
+^ grid-template-rows
+
+#jardin {
+    display: grid;
+    grid-template-columns: 20% 20% 20% 20% 20%; 
+    grid-template-rows: 20% 20% 20% 20% 20%; 
+}
+
+^ grid-column-start
+Ubica la posicion inicial del elemento
+
+^ grid-column-end
+Para extender el elemento varias columnas
+
+^ grid-column-end: span 
+El numero de posiciones que tomara
+
+^ grid-column
+Abreviatura de grid-column-start y grid-column-end
+
+^ grid-row-start
+Ubica la posicion inicial del elemento en la fila
+
+^ grid-row-end
+Para extender el elemento varias filas
+
+^ grid-row-end: span 
+El numero de posiciones que tomara
+
+^ grid-row
+Abreviatura de grid-row-start y grid-row-end
+
+^ grid-area
+Admite cuatro valores separados por barras oblicuas: grid-row-start, grid-column-start, grid-row-end, seguido de grid-column-end.
+
+^ order
+Indica una posicion en la cual queremos que explictamente este el elemento
+
+^ grid-template-columns: repeat(5, 20%);
+
+Acepta valores 100px, 3em, y 40% respectivamente.
+
+*/
+
+/* -------------------------------- Examples -------------------------------- */
+
+/*
+#agua {
+    grid-column-start: 3; 
+    grid-column-end: 4; 
+
+    * grid-column-end: -2; 
+    Indicar la segunda línea comenzando por la derecha.
+    * grid-column-end: span 2;
+
+    * grid-column: 4/6;
+    Empieza en la columna 4 y termina en la 6
+
+    * grid-column: 2/span 3;
+
+    * grid-area: 1 / 1 / 3 / 6;
+
+    * order: 5;
+}
+
+#veneno {
+    grid-column-start: 5; 
+}
+
+*/
 
 
