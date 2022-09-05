@@ -29,7 +29,7 @@ This repo is a collection of all the projects that I've been completing through 
     ----------------------------------------------------------
     
     - Learn CSS Variables by Building a City Skyline ✔️
-    - Learn CSS Grid by Building a Magazine
+    - Learn CSS Grid by Building a Magazine ✔️
 
         #### Certification Project : **Product Landing Page**
     ----------------------------------------------------------
