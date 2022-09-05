@@ -28,7 +28,7 @@ This repo is a collection of all the projects that I've been completing through 
         #### Certification Project : **Technical Documentation Page** ✔️
     ----------------------------------------------------------
     
-    - Learn CSS Variables by Building a City Skyline 
+    - Learn CSS Variables by Building a City Skyline ✔️
     - Learn CSS Grid by Building a Magazine
 
         #### Certification Project : **Product Landing Page**
