@@ -34,7 +34,7 @@ This repo is a collection of all the projects that I've been completing through 
         #### Certification Project : **Product Landing Page**
     ----------------------------------------------------------
 
-    - Learn CSS Animation by Building a Ferris Wheel
+    - Learn CSS Animation by Building a Ferris Wheel ✔️
     - Learn CSS Transforms by Building a Penguin
 
         #### Certification Project : **Personal Portfolio Webpage**
