@@ -1,0 +1,137 @@
+.wheel {
+    border: 2px solid black;
+    border-radius: 50%;
+    margin-left: 50px;
+    position: absolute;
+    height: 55vw;
+    width: 55vw;
+    max-height: 500px;
+    max-width: 500px;
+
+    /* To use an animation from @keyframes */
+    animation-name: wheel;
+    animation-duration: 10s;
+
+    /* To set how many times your animation should repeat */
+    animation-iteration-count: infinite;
+    /*  To set how the animation should progress over time */
+    animation-timing-function: linear;
+    /* linear: to run at the same rate from start to finish */
+}
+
+.line {
+    background-color: black;
+    width: 50%;
+    height: 2px;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform-origin: 0% 0%;
+    /* ^  The transform-origin 
+    property is used to set the point around which a CSS transformation is applied. For example,
+     when performing a rotate, the transform-origin determines around which point the element is rotated. */
+}
+
+
+.line:nth-of-type(2) {
+    transform: rotate(60deg);
+}
+
+.line:nth-of-type(3) {
+    transform: rotate(120deg);
+}
+
+.line:nth-of-type(4) {
+    transform: rotate(180deg);
+}
+
+.line:nth-of-type(5) {
+    transform: rotate(240deg);
+}
+
+.line:nth-of-type(6) {
+    transform: rotate(300deg);
+}
+
+.cabin {
+    background-color: red;
+    width: 20%;
+    height: 20%;
+    border: 2px solid;
+    transform-origin: 50% 0%;
+
+    /* Animation */
+    animation: cabins 10s ease-in-out infinite;
+    /* To use just one property, and not use animation-name, animation-duration, animation-timing-function, animation-iteration-count */
+    /* ease-in-out: This setting will tell the animation to start and end at a slower pace, but move more quickly in the middle of the cycle. */
+}
+
+.cabin:nth-of-type(1) {
+    right: -8.5%;
+    top: 50%;
+}
+
+.cabin:nth-of-type(2) {
+    right: 17;
+    top: 93.5%;
+}
+
+.cabin:nth-of-type(3) {
+    right: 67%;
+    top: 93.5%;
+}
+
+.cabin:nth-of-type(4) {
+    left: -8.5%;
+    top: 50%;
+}
+
+.cabin:nth-of-type(5) {
+    left: 17%;
+    top: 7%;
+}
+
+.cabin:nth-of-type(6) {
+    right: 17%;
+    top: 7%;
+}
+
+/* -------------------------------------------------------------------------- */
+/*                                  Animations                                */
+/* -------------------------------------------------------------------------- */
+
+
+/* ^ The @keyframes 
+at-rule is used to define the flow of a CSS animation. Within the @keyframes rule, you can create 
+selectors for specific points in the animation sequence, such as 0% or 25%, or use from and to to define the start and end of the sequence.
+
+@keyframes rules require a name, to reference. For example, the @keyframes freeCodeCamp { } rule would be named coco
+
+*/
+@keyframes wheel {
+    /* to define how your animation should start.  */
+    0% {
+        transform: rotate(0deg);
+    }
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+@keyframes cabins {
+    0% {
+        transform: rotate(0deg);
+    }
+    25% {
+        background-color: yellow;
+    }
+    50% {
+        background-color: purple;
+    }
+    75% {
+        background-color: yellow;
+    }
+    100% {
+        transform: rotate(-360deg);
+    }
+}
