@@ -31,10 +31,10 @@ This repo is a collection of all the projects that I've been completing through 
     - Learn CSS Variables by Building a City Skyline ✔️
     - Learn CSS Grid by Building a Magazine ✔️
 
-        #### Certification Project : **Product Landing Page**
+        #### Certification Project : **Product Landing Page** ✔️
     ----------------------------------------------------------
 
     - Learn CSS Animation by Building a Ferris Wheel ✔️
-    - Learn CSS Transforms by Building a Penguin
+    - Learn CSS Transforms by Building a Penguin ✔️
 
-        #### Certification Project : **Personal Portfolio Webpage**
+        #### Certification Project : **Personal Portfolio Webpage** ✔️

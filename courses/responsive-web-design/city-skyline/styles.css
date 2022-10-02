@@ -9,6 +9,7 @@
     --window-color2: #8cd9b3;
     --window-color3: #d98cb3;
     --window-color4: #8cb3d9;
+    /* var(--variable-name, fallback-value) */
 }
 
 * {
@@ -19,7 +20,7 @@
 body {
     height: 100vh;
     margin: 0;
-    overflow: hidden;
+    overflow: hidden; /* To hide any scroll bars that appear when something extends past the viewport */
 }
 
 .background-buildings, .foreground-buildings {
@@ -89,6 +90,15 @@ body {
     border-right: 5vw solid transparent;
 }
 
+/* To make the change a solid line like this */
+/* 
+linear-gradient(
+  var(--first-color) 0%,
+  var(--first-color) 40%,
+  var(--second-color) 40%,
+  var(--second-color) 80%
+);
+*/
 
 .bb2b {
     width: 100%;
